@@ -1,0 +1,20 @@
+{
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "mwplugin/DocBookExport",
+        "type": "mediawiki-extension",
+        "version": "dev-master",
+        "dist": {
+          "type": "zip",
+          "url": "https://codeload.github.com/wikimedia/mediawiki-extensions-DocBookExport/zip/master"
+        }
+      }
+    }
+  ],
+  "require": {
+    "composer/installers": "~1.0.25",
+    "mwplugin/DocBookExport": "dev-master"
+  }
+}

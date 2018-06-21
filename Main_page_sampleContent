@@ -1,0 +1,20 @@
+Main page sample content.
+
+Automaticially generated after docker compose.
+
+== DocbookExport plugin test: ==
+
+{{#docbook:
+page structure=
+? Bowling Introduction
+* How I buy shoes
+* Testing page
+** Buying clothes intro,Buying shoes(title=Buying the right clothes,header=section header)
+? Appendix
+|title=My Guide to Bowling
+|cover page=Cover Contents
+|header=My Guide to Bowling
+|footer=My Guide to Bowling
+|index term categories=index terms
+|index terms=shoe,clothes
+}}

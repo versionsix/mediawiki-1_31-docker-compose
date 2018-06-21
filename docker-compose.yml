@@ -1,0 +1,20 @@
+version: '3'
+services:
+  web:
+    build:
+     dockerfile: Dockerfile
+     context: .
+    image: xenefix/mediawiki131
+    ports:
+     - "8080:80"
+    depends_on:
+      - mysql
+  mysql:
+    image: "mysql:5.7"
+    volumes:
+      - db-data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=mysecretpassword
+volumes:
+  db-data:
+
